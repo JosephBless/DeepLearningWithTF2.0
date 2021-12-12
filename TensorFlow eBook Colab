@@ -1,0 +1,238 @@
+
+Deep Learning with Tensorflow 2.0
+Google Colab Binder GitHub Python 3.6 Python 3.6 WorkInProgress Facebook
+
+Getting Started • About • Table of Contents • Donate • Acknowledgment • FAQ •
+
+Made by Mukesh Mithrakumar • 🌌 https://mukeshmithrakumar.com
+This is the GitHub version of the Deep Learning with Tensorflow 2.0 by Mukesh Mithrakumar. Feel free to watch for updates, you can also follow me to get notified when I make a new post.
+
+📋 Getting Started
+Read the book in its entirety online at https://www.adhiraiyan.org/DeepLearningWithTensorflow.html
+
+Run the code using the Jupyter notebooks available in this repository's notebooks directory.
+
+Launch executable versions of these notebooks using Google Colab: Colab
+
+Launch a live notebook server with these notebooks using binder: Binder
+
+About
+This Book is a practical guide to Deep Learning with Tensorflow 2.0. We will be using the Deep Learning Book by Ian Goodfellow as our guide. Ian Goodfellows' Deep Learning Book is an excellent, comprehensive textbook on deep learning that I found so far but this book can be challenging because this is a highly theoretical book written as an academic text and the best way to learn these concepts would be by practicing it, working on problems and solving programming examples which resulted in me writing Deep Learning with Tensorflow 2.0 as a practical guide with explanations for complex concepts, summaries for others and practical examples and exercises in Tensorflow 2.0 to help anyone with limited mathematics, machine learning and programming background to get started.
+
+Read more about the book in Introduction.
+
+Finally I would like to ask for your help, this Book is for you, and I would love to hear from you, if you need more explanations, have doubts on certain sections, many others will feel the same so please feel free to reach out to me via:
+
+Facebook LinkedIn Twitter Instagram
+with your questions, comments or even if you just want to say Hi.
+
+Table of Contents
+▴ Back to top
+
+0. Index
+1. Introduction
+01.00 Preface
+01.01 Introduction
+01.02 Who should read this book
+01.03 A Short History of Deep Learning
+2. Linear Algebra
+02.01 Scalars, Vectors, Matrices and Tensors
+02.02 Multiplying Matrices and Vectors
+02.03 Identity and Inverse Matrices
+02.04 Linear Dependence and Span
+02.05 Norms
+02.06 Special Kinds of Matrices and Vectors
+02.07 Eigendecomposition
+02.08 Singular Value Decomposition
+02.09 The Moore-Penrose Pseudoinverse
+02.10 The Trace Operator
+02.11 The Determinant
+02.12 Example: Principal Components Analysis
+3. Probability and Information Theory
+03.01 Why Probability?
+03.02 Random Variables
+03.03 Probability Distributions
+03.04 Marginal Probability
+03.05 Conditional Probability
+03.06 The Chain Rule of Conditional Probabilities
+03.07 Independence and Conditional Independence
+03.08 Expectation, Variance and Covariance
+03.09 Common Probability Distributions
+03.10 Useful Properties of Common Functions
+03.11 Bayes' Rule
+03.12 Technical Details of Continuous Variables
+03.13 Information Theory
+03.14 Structured Probabilistic Models
+4. Numerical Computation
+04.01 Overflow and Underflow
+04.02 Poor Conditioning
+04.03 Gradient-Based Optimization
+04.04 Constrained Optimization
+04.05 Example: Linear Least Squares
+5. Machine Learning Basics
+05.01 Learning Algorithms
+05.02 Capacity, Overfitting and Underfitting
+05.03 Hyperparameters and Validation Sets
+05.04 Estimators, Bias and Variance
+05.05 Maximum Likelihood Estimation
+05.06 Bayesian Statistics
+05.07 Supervised Learning Algorithms
+05.08 Unsupervised Learning Algorithms
+05.09 Stochastic Gradient Descent
+05.10 Building a Machine Learning Algorithm
+05.11 Challenges Motivating Deep Learning
+6. Deep Feedforward Networks
+06.01 Example: Learning XOR
+06.02 Gradient-Based Learning
+06.03 Hidden Units
+06.04 Architecture Design
+06.05 Back-Propagation and Other Differentiation Algorithms
+06.06 Historical Notes
+7. Regularization for Deep Learning
+07.01 Parameter Norm Penalties
+07.02 Norm Penalties as Constrained Optimization
+07.03 Regularization and Under-Constrained Problems
+07.04 Dataset Augmentation
+07.05 Noise Robustness
+07.06 Semi-Supervised Learning
+07.07 Multitask Learning
+07.08 Early Stopping
+07.09 Parameter Tying and Parameter Sharing
+07.10 Sparse Representations
+07.11 Bagging and Other Ensemble Methods
+07.12 Dropout
+07.13 Adversarial Training
+07.14 Tangent Distance, Tangent Prop and Manifold Tangent Classifier
+8. Optimization for Training Deep Models
+08.01 How Learning Differs from Pure Optimization
+08.02 Challenges in Neural Network Optimization
+08.03 Basic Algorithms
+08.04 Parameter Initialization Strategies
+08.05 Algorithms with Adaptive Learning Rates
+08.06 Approximate Second-Order Methods
+08.07 Optimization Strategies and Meta-Algorithms
+9. Convolutional Networks
+09.01 The Convolution Operation
+09.02 Motivation
+09.03 Pooling
+09.04 Convolution and Pooling as an Infinitely Strong Prior
+09.05 Variants of the Basic Convolution Function
+09.06 Structured Outputs
+09.07 Data Types
+09.08 Efficient Convolution Algorithms
+09.09 Random or Unsupervised Features
+09.10 The Neuroscientific Basis for Convolutional Networks
+09.11 Convolutional Networks and the History of Deep Learning
+10. Sequence Modeling: Recurrent and Recursive Nets
+10.01 Unfolding Computational Graphs
+10.02 Recurrent Neural Networks
+10.03 Bidirectional RNNs
+10.04 Encoder-Decoder Sequence-to-Sequence Architectures
+10.05 Deep Recurrent Networks
+10.06 Recursive Neural Networks
+10.07 The Challenge of Long-Term Dependencies
+10.08 Echo State Networks
+10.09 Leaky Units and Other Strategies for Multiple Time Scales
+10.10 The Long Short-Term Memory and Other Gated RNNs
+10.11 Optimization for Long-Term Dependencies
+10.12 Explicit Memory
+11. Practical Methodology
+11.01 Performance Metrics
+11.02 Default Baseline Models
+11.03 Determining Whether to Gather More Data
+11.04 Selecting Hyperparameters
+11.05 Debugging Strategies
+11.06 Example: Multi-Digit Number Recognition
+12. Applications
+12.01 Large-Scale Deep Learning
+12.02 Computer Vision
+12.03 Speech Recognition
+12.04 Natural Language Processing
+12.05 Other Applications
+13. Linear Factor Models
+13.01 Probabilistic PCA and Factor Analysis
+13.02 Independent Component Analysis
+13.03 Slow Feature Analysis
+13.04 Sparse Coding
+13.05 Manifold Interpretation of PCA
+14. Autoencoders
+14.01 Undercomplete Autoencoders
+14.02 Regularized Autoencoders
+14.03 Representational Power, Layer Size and Depth
+14.04 Stochastic Encoders and Decoders
+14.05 Denoising Autoencoders
+14.06 Learning Manifolds with Autoencoders
+14.07 Contractive Autoencoders
+14.08 Predictive Sparse Decomposition
+14.09 Applications of Autoencoders
+15. Representation Learning
+15.01 Greedy Layer-Wise Unsupervised Pretraining
+15.02 Transfer Learning and Domain Adaptation
+15.03 Semi-Supervised Disentangling of Causal Factors
+15.04 Distributed Representation
+15.05 Exponential Gains from Depth
+15.06 Providing Clues to Discover Underlying Causes
+16. Structured Probabilistic Models for Deep Learning
+16.01 The Challenge of Unstructured Modeling
+16.02 Using Graphs to Describe Model Structure
+16.03 Sampling from Graphical Models
+16.04 Advantages of Structured Modeling
+16.05 Learning about Dependencies
+16.06 Inference and Approximate Inference
+16.07 The Deep Learning Approach to Structured Probabilistic Models
+17. Monte Carlo Methods
+17.01 Sampling and Monte Carlo Methods
+17.02 Importance Sampling
+17.03 Markov Chain Monte Carlo Methods
+17.04 Gibbs Sampling
+17.05 The Challenge of Mixing between Separated Modes
+18. Confronting the Partition Function
+18.01 The Log-Likelihood Gradient
+18.02 Stochastic Maximum Likelihood and Contrastive Divergence
+18.03 Pseudolikelihood
+18.04 Score Matching and Ratio Matching
+18.05 Denoising Score Matching
+18.06 Noise-Contrastive Estimation
+18.07 Estimating the Partition Function
+19. Approximate Inference
+19.01 Inference as Optimization
+19.02 Expectation Maximization
+19.03 MAP Inference and Sparse Coding
+19.04 Variational Inference and Learning
+19.05 Learned Approximate Inference
+20. Deep Generative Models
+20.01 Boltzmann Machines
+20.02 Restricted Boltzmann Machines
+20.03 Deep Belief Networks
+20.04 Deep Boltzmann Machines
+20.05 Boltzmann Machines for Real-Valued Data
+20.06 Convolutional Boltzmann Machines
+20.07 Boltzmann Machines for Structured or Sequential Outputs
+20.08 Other Boltzmann Machines
+20.09 Back-Propagation through Random Operations
+20.10 Directed Generative Nets
+20.11 Drawing Samples from Autoencoders
+20.12 Generative Stochastic Networks
+20.13 Other Generation Schemes
+20.14 Evaluating Generative Models
+20.15 Conclusion
+Acknowledgment
+▴ Back to top
+
+To cite the Deep Learning Book by GoodFellow, please use this bibtex entry:
+
+@book{Goodfellow-et-al-2016,
+    title={Deep Learning},
+    author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+    publisher={MIT Press},
+    note={\url{http://www.deeplearningbook.org}},
+    year={2016}
+}
+To cite the Deep Learning with Tensorflow 2.0 Book by Mukesh Mithrakumar, please use this bibtex entry:
+
+@book{MukeshMithrakumar-2019,
+    title={Deep Learning with Tensorflow 2.0},
+    author={Mukesh Mithrakumar},
+    note={\url{https://github.com/adhiraiyan/DeepLearningWithTF2.0}},
+    year={2019}
+}
